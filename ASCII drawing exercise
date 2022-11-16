@@ -1,0 +1,161 @@
+Smiley face code:
+import turtle
+
+def square_draw(x,y,sz):
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(x,y)
+    turtle.pendown()
+    
+
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+    turtle.end_fill()
+
+
+    turtle.penup()
+    turtle.goto(-70,25)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(60,25)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+    turtle.end_fill()
+    
+    turtle.penup()
+    turtle.goto(-45,85)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+    turtle.end_fill()
+
+    turtle.penup()
+    turtle.goto(30,85)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+    turtle.end_fill()
+
+
+for y in range (-5,5,30):
+    for x in range (-50,50,30):
+        square_draw(x,y,20)
+
+
+Sad face code:
+
+import turtle
+
+def square_draw(x,y,sz):
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(x,y)
+    turtle.pendown()
+
+
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+    turtle.end_fill()
+
+
+    turtle.penup()
+    turtle.goto(-75,-25)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+    turtle.end_fill()
+
+    turtle.penup()
+    turtle.goto(65,-24)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+    turtle.end_fill()
+
+    turtle.penup()
+    turtle.goto(-45,70)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+    turtle.end_fill()
+
+    turtle.penup()
+    turtle.goto(30,70)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+    turtle.end_fill()
+
+
+for y in range (-5,5,30):
+    for x in range (-50,50,30):
+        square_draw(x,y,20)
+
+
+Surprised face code:
+
+
+import turtle
+
+def square_draw(x,y,sz):
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(x,y)
+    turtle.pendown()
+
+
+
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+        
+            
+    turtle.penup()
+    turtle.goto(-60,35)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(20)
+        turtle.right(90)
+    turtle.end_fill()
+    
+                
+    turtle.penup()
+    turtle.goto(105,35)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(20)
+        turtle.right(90)
+    turtle.end_fill()
+
+
+
+for y in range (-5,5,70):
+    for x in range (-10,5,70):
+        square_draw(x,y,90)
