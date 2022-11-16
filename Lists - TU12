@@ -1,0 +1,10 @@
+MyList = [' dog', ' cat',' snail', ' bug', ' fish' ]
+print(*MyList[0:4],sep=",")
+
+
+MyList = [' mario', ' wario',' luigi', ' peach', ' wario' ]
+MyList.sort()
+print(*MyList[0:4],sep=",")
+NewCharacter = input("Add a character!")
+MyList.append(NewCharacter)
+print(*MyList, sep= " ,")
