@@ -1,0 +1,44 @@
+name = "Eric"
+age = 74
+print("Hello",name,"You are",age)
+
+
+print(f"Hello, {name}. You are {age}.")
+
+#Exercise 1:  Create a float variable for Ringgit and print it as "RM129"
+
+ringgit = 129
+print(f"RM{ringgit}")
+
+
+
+#DEMONSTRATION CODE FOR CREATING A TABLE
+numcol1 = [1,1003442,5.32222342]
+numcol2 = [5.62233,7.364363,9.32747474342]
+numcol3 = [9.2634526,7.866832817,10.781237892798]
+number = 17
+
+print("\nLeft Justify")
+for i in range(3):
+    print(f"{numcol1[i]:<15} {numcol2[i]:<15} {numcol3[i]:<15}")
+
+print("\nRight justify with fixed decimal points")
+for i in range(3):
+    print(f"{numcol1[i]:>15.2f} {numcol2[i]:>15.2f} {numcol3[i]:>15.2f}")
+
+print("\nCentred with fixed decimal points")
+for i in range(3):
+    print(f"{numcol1[i]:^15.2f} {numcol2[i]:^15.2f} {numcol3[i]:^15.2f}")
+
+
+# Exercise 2: Create a table of numbers with headings
+
+print("\nexercise table")
+for i in range(1):
+    print(f"Binary: {number:b} \nHexadecimal: {number:x} \nDecimal: {number:d}")
+
+
+# Exercise 3: Create a quick binary convertor
+
+num = input("\nenter a value to convert into binary")
+print(f"Binary version: {int(num):b}")
