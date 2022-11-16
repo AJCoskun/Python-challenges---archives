@@ -1,0 +1,6 @@
+mychar = input("Please enter a single character:")
+if len(mychar) == 1:
+    print("data valid")
+else:
+    print("Data invalid")
+    mychar = input("Please enter a single character:")
