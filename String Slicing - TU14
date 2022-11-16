@@ -1,0 +1,4 @@
+MyString = "qwertyuopasdfghjk"
+print (MyString[3:6])
+print (MyString[-1:-4:-1])
+print (MyString[5:8:2])
