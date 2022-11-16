@@ -1,0 +1,18 @@
+import datetime
+
+
+def timed_proc():
+    for i in range(1000):
+        print(i)
+
+
+start_time = datetime.datetime.now()
+sentence = input("please write 'the lazy fox jumped over the brown dog':  ")
+if sentence != "the lazy fox jumped over the brown dog":
+    print("thats incorrect try again")
+    sentence = input("please write 'the lazy fox jumped over the brown dog':  ")
+
+timed_proc()
+
+time_taken = datetime.datetime.now() - start_time
+print("You took", time_taken, "to type out the given sentence")
