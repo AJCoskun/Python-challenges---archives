@@ -1,0 +1,11 @@
+array = ["Kai", "Zion", "Jayden", "Eliana", "Luca", "Ezra", "Maeve", "Aaliyah"]
+
+def search(array, x):
+    for i in range(len(array)):
+
+        if array[i] == x:
+            return i
+
+    return -1
+
+print(search(array, "Jayden"))
