@@ -1,0 +1,11 @@
+import random
+num = random.randint(0, 4)
+
+insults = ["You're a scallywag,", "ur a loser,", "so not swag,", "go clean your room,", "go away,"]
+
+
+def insult(name):
+    print(insults[num], f"{name}")
+
+name = input("What is your name?")
+print(insult(name))
