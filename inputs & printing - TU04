@@ -1,0 +1,4 @@
+Kanyewestborn = 1977
+myage = int(input('when were you born'))
+agedifference = myage - Kanyewestborn
+print("king kanye is", agedifference,"years older than you")
