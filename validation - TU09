@@ -1,0 +1,13 @@
+numberofguesses = 0
+while True:
+    MyNumber = input("please input a number: ")
+    try:
+        valid_number = int(MyNumber)
+        break
+    except ValueError:
+        print("seriously, don't you read instructions. \nI asked for a number...")
+        numberofguesses = numberofguesses + 1
+        print("you failed", numberofguesses, "times")
+        
+        
+print(valid_number)
