@@ -1,0 +1,9 @@
+def makeitlaugh(string, A):
+    vowels = 'AEIOUaeiou'
+    for i in vowels:
+        string = string.replace(i, A)
+    return string
+
+A = "haha"
+beforelaugh = input("Type in a message!")
+print("final laughing message:", makeitlaugh(beforelaugh, A))
