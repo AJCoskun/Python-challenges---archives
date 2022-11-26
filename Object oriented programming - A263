@@ -1,0 +1,138 @@
+import random
+class character:
+    def __init__(self):
+        self.name = ""
+        self.atk = 0
+        self.defence = 0
+        self.__hp = 0
+        self.exp = 0
+
+    def printbasics(self):
+        print("name:  ",self.name)
+        print("attack:  ",self.atk)
+        print("defence:  ",self.defence)
+        print("health:  ",self.__hp)
+        print("experience:  ",self.exp)
+
+    def printintro(self):
+        print("this is how the story begins...")
+
+    def printme(self):
+        self.printme()
+
+    def healthgetter(self):
+        return self.__hp
+
+    def setter(self,name):
+        self.name = name
+        self.atk = random.randint(0,100)
+        self.defence = random.randint(0,100)
+        self.__hp = random.randint(1,100)
+
+
+
+
+class wizard(character):
+    def __init__(self):
+        character.__init__(self)
+        self.magic = 0
+
+    def setter(self,name):
+        self.name = name
+        self.atk = random.randint(80,100)
+        self.defence = random.randint(0,70)
+        self.__hp = 90
+        self.magic = 70
+
+    def printme(self):
+        self.printbasics()
+        print("magic:  ",self.magic)
+
+
+
+
+class knight(character):
+    def __init__(self):
+        character.__init__(self)
+        self.armour = 0
+
+    def setter(self,name):
+        self.name = name
+        self.atk = random.randint(50,100)
+        self.defence = random.randint(20,70)
+        self.__hp = 120
+        self.armour = 70
+
+
+    def printme(self):
+        self.printbasics()
+        print("armour:  ",self.armour)
+    class weapon:
+        def attack():
+            print("the knight swings his mighty blade")
+
+
+
+class bard(character):
+    def __init__(self):
+        character.__init__(self)
+        self.singing = 0
+
+    def setter(self,name):
+        self.name = name
+        self.atk = random.randint(0,70)
+        self.defence = random.randint(0,70)
+        self.__hp = 200
+        self.singing = 70
+
+    def printme(self):
+        self.printbasics()
+        print("singing:  ",self.singing)
+
+    class weapon:
+        def sing():
+            print("The bard sings a tune and heals all party members!")
+
+
+
+maximus = character()
+maximus.name = "maximus"
+maximus.printbasics()
+
+
+merlin = wizard()
+merlin.name = "merlin"
+merlin.printbasics()
+merlin.setter('merlin')
+print('health', merlin.healthgetter())
+
+arthur = knight()
+arthur.name = "arthur"
+arthur.printbasics()
+arthur.weapon.attack()
+arthur.setter('arthur')
+print('health', arthur.healthgetter())
+
+venti = bard()
+venti.name = 'venti'
+venti.printbasics()
+venti.weapon.sing()
+venti.setter('venti')
+print('health', venti.healthgetter())
+
+caste = input('\nwould you like to be a wizard (w), bard (b) or knight (k)?')
+charname = input("what is your name?")
+
+if caste.lower() == "k":
+    print("A Noble knight has been created!!!")
+    you = knight()
+elif caste.lower() == "w":
+    print("\nA magical wizard has been created!!!")
+elif caste.lower() == "b":
+    print("\nA helpful bard has been created!!!")
+else:
+    print("\nso you want to be a normie? a mere human? they'll eat you alive out there you know... \n but sure go ahead! :)")
+#
+# you = character()
+# you.setter(charname)
+# you.printme()
