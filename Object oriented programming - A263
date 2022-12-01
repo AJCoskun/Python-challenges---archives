@@ -122,6 +122,8 @@ print('health', venti.healthgetter())
 
 caste = input('\nwould you like to be a wizard (w), bard (b) or knight (k)?')
 charname = input("what is your name?")
+you = character()
+you.name = (charname)
 
 if caste.lower() == "k":
     print("A Noble knight has been created!!!")
@@ -132,7 +134,7 @@ elif caste.lower() == "b":
     print("\nA helpful bard has been created!!!")
 else:
     print("\nso you want to be a normie? a mere human? they'll eat you alive out there you know... \n but sure go ahead! :)")
-#
-# you = character()
-# you.setter(charname)
-# you.printme()
+
+
+you.setter(charname)
+you.printbasics()
